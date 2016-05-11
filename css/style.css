@@ -342,15 +342,13 @@ input#toggle nav{
 	position: absolute;
 	top: 80px;}
 
-/*#masthead {
-	background-color: #7A847D;
+#masthead {width: 9em; 
+	background-color: #7A847D;  
     height: 5em;
-    left: 50%;
-    margin-left: -1.75em;
-    position: fixed;
-    top: 0;
-    z-index: 200;
-	}*/
+    z-index: 650; 
+    margin: -17px auto;
+}
+	
 #container-header {width: 9em;}
 	#container-header a {text-decoration: none;}
 	
@@ -391,10 +389,9 @@ input#toggle nav{
 	color:#eee;
 	font-weight:100;
 	position: fixed;
-	bottom: 0;
 	width: 100%;
 	text-align: center;
-	
+	height: 75px;
 }
 
 
@@ -405,7 +402,6 @@ img {
 }
 
 #nav,
-#masthead,
 #content,
 #statement,
 #ctact,
@@ -983,28 +979,33 @@ img.email3 {}
 
     
 	}
-
 /* ******************************************
 		smallest
 ****************************************** */
 	
-@media (max-width: 24em) {
+@media (max-width: 375px) {
+#container-header {
+    width: 18.2em;
+}
+}
+/* ******************************************
+		smallest
+****************************************** */
+	
+@media (max-width: 17em) {
 #container-header{ 
-	width: 7em; 
-	background-color: #7A847D;  
-    height: 4em;
     position: fixed;
-    left: 30%;
+    width: 17em;
+    top: 0;
     z-index: 650;
 }
 
-#masthead {  
-   /* left: 45%;
-    margin-left: -1.75em;
-    position: fixed;
-    top: 0;
-    z-index: 600;*/
+#masthead { width: 7em; 
+	width:7em;
+    margin: -17px auto;
 }
+   
+
 
 #container-header h2 {
     color: #FFF;
@@ -1013,8 +1014,8 @@ img.email3 {}
     letter-spacing: 0.45em;
     text-transform: uppercase;
     line-height: 1;
-    margin-top: 1.25em;
-    padding-left: .08em;
+    padding-left: .5em;
+    padding-top: 1em;
 }
 
 
@@ -1034,12 +1035,26 @@ img.email3 {}
     margin: 0;
 }
 
+#container-nav.homeimage{
+	width:24em;
+}
+
 #container-nav {
     left:0;
 }
 
 #nav label { 
-    background-position: 90% center;
+    background-position: 60% center;
+}
+
+#wrapitup {
+    max-height: 477px;
+    overflow: scroll;
+    z-index: 0;
+}
+#container-footer {
+ width: 17em;
+    
 }
 }
 /* ******************************************

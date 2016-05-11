@@ -1,4 +1,5 @@
 <?php require_once('header.php'); ?>
+   <div style="clear:both;"></div>
    <div id="wrapitup">
 		<div id="container-content">
 			<article id="content">
@@ -327,4 +328,5 @@ acrylic on panel, 10&nbsp;x&nbsp;8.</p>
 		</div>
 	</div>
 </div>
+<div style="clear:both;"></div>
 <?php require_once('footer.php'); ?>
