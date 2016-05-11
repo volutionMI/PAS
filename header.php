@@ -65,7 +65,7 @@
 			<div id="icon">
         	<a href="https://www.facebook.com/pages/Rick-Pas-Studio/316205728224?ref=hl." target="_blank"><img class="faceicon" height="21" width="21" alt="facebook" src="img/facebook.png"></a>&emsp;
 			<a href="https://www.pinterest.com/rickpas/" target="_blank"><img class="faceicon" height="21" width="21" alt="pinterest" src="img/pinterest.png"></a>&emsp;
-			<a href="https://www.instagram.com/?hl=en" target="_blank"><img class="faceicon" height="21" width="21" alt="instagram" src="img/instagram.png"></a>&emsp;
+			<a href="https://www.instagram.com/rick.pas/" target="_blank"><img class="faceicon" height="21" width="21" alt="instagram" src="img/instagram.png"></a>&emsp;
 			<a href="mailto:rickpas@rickpas.com?subject=Inquiry from Website""><img class="faceicon" height="21" width="21" alt="email to rick" src="img/email.png"></a>
 		  </div>
 			<section id="nav" class="wrapper">
