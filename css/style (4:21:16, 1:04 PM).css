@@ -1,0 +1,1052 @@
+/********************************************
+	start 14/0426
+********************************************/
+
+
+/********************************************
+	Tag Resets
+********************************************/
+
+body,
+div,font
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+th,
+td,
+article,
+aside,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+/********************************************
+	Normalize CSS
+	http://necolas.github.com/normalize.css/
+********************************************/
+
+html {
+	height: 100%;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+
+body {
+	min-height: 100%;
+	color: #fff;
+	
+}
+
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+audio,
+canvas,
+video {
+	display: block;
+}
+
+sub,
+sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sup {
+	top: -0.5em;
+}
+
+sub {
+	bottom: -0.25em;
+}
+
+pre {
+	white-space: pre;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+}
+
+b,
+strong {
+	font-weight: bold;
+}
+
+abbr[title] {
+	border-bottom: 1px dotted;
+}
+
+input,
+textarea,
+button,
+select {
+	margin: 0;
+	font-size: 100%;
+	line-height: normal;
+	vertical-align: baseline;
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	cursor: pointer;
+	-webkit-appearance: button;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+textarea {
+	overflow: auto;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ******************************************
+	Web Fonts
+****************************************** */
+
+@font-face {
+    font-family: 'Muli', sans-serif;  
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* ******************************************
+	Custom Styles
+****************************************** */
+
+/*	  For details on font-size:100% see here: 
+      http://filamentgroup.com/lab/how_we_learned_to_leave_body_font_size_alone/ 
+	  
+	  For details on line-height:1 see here:
+      http://meyerweb.com/eric/thoughts/2008/05/06/line-height-abnormal/ 
+
+	  For details on text-size-adjust:100% see here:
+	  https://developer.mozilla.org/en-US/docs/CSS/text-size-adjust 
+*/
+
+html {
+   font-size: 100%;
+   line-height: 1;
+   -moz-text-size-adjust: 100%;
+   -ms-text-size-adjust: 100%;
+   -webkit-text-size-adjust: 100%;
+}
+
+body {
+	font-family: 'Muli', sans-serif;
+	background-color: #292224;
+}
+
+p, #resume li {
+	font-size: 1.063em; /* 17px / 16 = 1.063em */
+	line-height: 1.223; /* 1.3 / 1.063 = 1.223 */
+	margin: .612em 0;
+	color: #fff;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	    font-weight: 100;
+	    }
+		
+h1 {
+	font-size: 3.189em;
+	line-height: 1.223;
+		}
+	
+h2  {
+	font-size: 2.126em;
+	line-height: 1.223;
+		    }
+			
+h1, h2 {
+	/*text-shadow: 0 2px 2px rgba(0, 0, 0, .65);*/
+			 }
+			 
+h3 {
+	font-size: 1.382em; 
+	line-height: 1.223;
+		}
+		    
+h4 {
+	font-size: 1em;
+	line-height: 1.56;
+	text-transform: uppercase;
+		}
+		
+h3,h4 {      
+	font-weight: 300;
+	text-transform: uppercase;
+		}
+		
+h5 {
+	font-size: .8125em;
+	line-height: 1.125;
+		}
+
+h5,h6 {
+	font-family: 'Muli', sans-serif;
+	font-size: .85em;
+	line-height: 1.53;
+	font-weight: 500;
+		}
+h6 {
+	color: #aaa;
+	font-weight: 200;
+		}
+		
+.wrapper {
+	        padding: 0;
+	        -webkit-box-sizing: border-box;
+	        -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+		}
+		
+#masthead {
+			color:#fff;
+		}
+		
+/* Headshot */
+
+#maya {
+		    width: 25%;
+		    height: 0;
+		    padding-bottom: 25%;
+		    }
+    
+#maya img {
+		    width: 100%;
+		    }		
+		
+#nav h3 {
+	text-transform: capitalize;
+		}
+		
+#content article {
+	padding-top: 0.65em;
+	padding-bottom: 1.3em;
+	width: auto;
+		}
+		
+#portfolio h4 {
+	line-height: 1.82;
+		}
+#portfolio p{
+	color: #FFF;
+	font-weight: 200;	
+	font-size:.52em;
+	/*text-align: center;*/
+	/*width: 500px;*/
+height: 1em;
+}
+
+p.caption {}
+
+.box {
+			padding:14px;
+		}
+		
+.box h4 {
+	color: #999;
+	border-top: 4px double #eee;
+	border-bottom: 1px solid #eee;
+	margin-bottom: .975em; /* 3/4 of 1.3 */
+	text-align: center;
+		}
+		
+.box ul {
+	list-style: none;
+	padding: 0;
+		}
+
+#portfolio figure,.box {
+	padding: 0 .24375em; /* 3/4 of 1.3 */
+	/*height: 80%;*/
+	/*width: auto;*/
+		}
+
+#portfolio:last-child {
+    /*margin-bottom:5em;*/
+		}
+
+/* Creates hover effect on Portfolio images */
+#portfolio figure:hover,
+.box:hover {
+	
+				}
+
+/* Image Offset for Indication of Linked Content */
+
+#portfolio figure:hover {
+		/* bottom: .26em;*/
+				}
+		
+section footer {
+	clear: both;
+		   }
+
+#container-nav {
+	background:#fff;
+	height: 2.7em;
+	z-index: 10;
+	position: fixed;
+    top: 0;
+    width: 320px;
+}
+
+input#toggle nav{
+	position: absolute;
+	top: 80px;}
+
+#container-header {
+	background-color: #fff;
+}
+header#masthead{
+	background-color: #7A847D;
+    height: 5em;
+    left:3.7em;  
+    position: fixed;
+    top: 0;
+    z-index: 200;
+    width: 9em;
+	padding-left:3px;}
+
+	#container-header a {text-decoration: none;}
+	
+	
+#container-header h2{
+    color: #FFFFFF;
+    font-size: 1em;
+    font-weight: 100;
+    letter-spacing: 0.5em;
+    text-transform: uppercase;
+	line-height: 1;
+	margin-top: 1.25em;
+	text-align:center;
+}
+	
+	#container-header h1{
+       color: #342F30;
+    font-size: 0.7em;
+    font-weight: 100;
+    letter-spacing: 0.2em;
+    padding-left: 0;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+
+	
+#container-content {
+	padding: 24px 0;
+	   padding-top: 100px;
+	   background-color: #292224;
+}
+
+#container-header, #container-footer {
+	width:320px;
+	
+}
+
+#container-footer {
+	position: fixed;
+	bottom:0;
+	z-index:200;
+	background-color:#888;
+}
+
+img {
+	max-width:100%;
+}
+
+#nav,
+/*#masthead,*/
+#content,
+#statement,
+#ctact,
+#colophon {
+    margin: 0 3.3%;
+    }
+	
+#statement,  #ctact {
+   margin-top: 1em;
+   padding-bottom: 7em;}
+   
+   #statement {max-width: 46.875em; 
+  }
+   
+   #ctact {max-width: 16em;  
+   left: 50%;
+   position: relative;
+   margin-left: -6.7em;
+   }
+   
+   
+#ctact a {color: #6178bb;}
+#ctact a:hover {color: #e5d7ac;}
+
+
+#statement h3, #ctact h3 {font-size: .75em;
+line-height: 1.223;
+letter-spacing: .1em;
+margin-bottom: 0;
+padding-bottom: 0;
+margin-top: 1.2em;
+text-transform: uppercase;
+}
+
+#statement h4{margin-top:.3em; font-size: .75em;}
+#statement p{font-size: .75em; margin: 0;}
+
+#ctact p {font-size: .95em; margin-bottom: 1.5em;}
+#statement p, #ctact p {
+line-height: 1.223;
+color: #FFF;
+font-weight: 100;
+letter-spacing: .01em;
+}
+
+#statement p.indent, #ctact p.indent {margin-top:0;
+margin-bottom: .8em;}
+
+
+/********************************************
+	Fluid Media
+********************************************/
+
+	figure {
+	/* [disabled]position: relative; */
+	/* [disabled]width: auto; */
+	
+	}
+
+	figure img,
+	figure object,
+	figure embed,
+	figure video {
+	display: inline-block;
+	max-width: 100%;
+	}
+
+	img {
+	    border: 0;
+	    -ms-interpolation-mode: bicubic;
+	}
+
+	/* 
+	interpolation-mode
+	http://css-tricks.com/ie-fix-bicubic-scaling-for-images/
+	 */
+	
+
+
+/* ******************************************
+	   Form Styles Basic Layout
+****************************************** */
+
+	form {
+	    padding: 0 0 1.3em;
+	    }
+    
+	form ul {
+	    list-style: none;
+	    padding: 1.3em 0 0;
+	    }
+    
+	form li {
+	    padding: 0 0 .65em;
+	    }
+	
+	legend {
+		font-size: 1.382em; 
+		line-height: 1.223;
+		}
+		    
+	label {
+	    display: block;
+		font-size: 1em;
+		line-height: 1.56;
+	    padding: 0 0 .325em;
+		}
+		
+	legend, label {      
+		font-weight: 300;
+		text-transform: uppercase;
+		color: #fff;
+		}
+	
+	input,
+	textarea {
+	    display: block;
+	    width: 100%;
+	    font-family: 'Muli', sans-serif;
+		font-size: 1em;
+		line-height: 1.3;
+		font-weight: 500;}
+	.send {
+	    display: inline-block;
+	    max-width: 30em;
+	    font-size: 1em;
+	    line-height: 1;
+	    font-weight: 500;
+	    color: #fff;
+	    text-decoration: none;
+	    background: #0074b0;
+	    margin: .65em .26em;
+	    padding: .975em;
+	    border: 0;
+	    padding: .65em;
+	    -webkit-box-sizing: border-box;
+	    -moz-box-sizing: border-box;
+	    box-sizing: border-box;
+	    }
+
+	/**
+	 * 1. Remove default vertical scrollbar in IE 6/7/8/9.
+	 * 2. Improve readability and alignment in all browsers.
+	 */
+
+	textarea {
+	    padding-bottom: 10%;
+	    overflow: auto; /* 1 */
+	    vertical-align: top; /* 2 */
+	     border-radius: 1.3em;
+	    text-shadow: 0 -1px 1px rgba(0, 0, 0, .65);
+	    }
+    
+	.send:hover {
+	    background: #6f6f6f;
+	    }
+    
+	.send:active,
+	.send:focus {
+	    background: #555;
+	    }
+
+/* Float Clearing http://nicolasgallagher.com/micro-clearfix-hack */
+
+.group:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+    clear: both;
+}
+
+.group {
+    *zoom: 1; /* 3 */
+    }
+
+	/* ******************************************
+	    IE 7 and below, legacy browser style fixes
+	****************************************** */
+
+	.ie .wrapper {
+	    *behavior: url("http://thinkvolution1.com/rickpas/js/boxsizing.htc");
+	}
+
+	/* Clearfix */
+
+	.group {
+	    *zoom: 1;
+	    }
+#nav {
+    padding: .65em 0;
+	
+}
+
+#nav h3 {
+    float: left;
+    text-transform: capitalize; 
+}
+	#nav ul {
+    list-style: none;
+    padding: 0;
+    border-bottom: 1px solid #eee;
+    margin: 2.65em 0 .39em;
+	text-align: center;
+}
+
+#nav li {
+   border-top: 1px solid #eee;
+}		
+
+
+#nav nav {
+    height: 0;
+    overflow: hidden;
+}
+
+#nav a {
+   -moz-text-decoration-color: -moz-use-text-color;
+    -moz-text-decoration-line: none;
+    -moz-text-decoration-style: solid;
+    background-color: #FFFFFF;
+    color: #333333;
+    display: block;
+    font-size: 1.063em;
+    opacity: 0.7;
+    padding-bottom: 0.975em;
+    padding-left: 1.3em;
+    padding-right: 1.3em;
+    padding-top: 0.975em;
+   text-transform: uppercase;
+   text-decoration: none;
+      letter-spacing: 0.05em;}
+
+#nav a:hover {
+   background: #f8f8f8;
+}
+	
+	body { 
+    -webkit-animation: bugfix infinite 1s; 
+}
+
+#colophon p.wrapper{ font-size: .7em;}
+
+@-webkit-keyframes bugfix {
+    from {padding: 0;} 
+    to {padding: 0;} 
+}
+
+#nav input[type=checkbox] {
+    position: absolute;
+    top: -999em;
+    left: -999em;
+}
+
+
+#nav label {
+	display: block;
+	text-indent: -999em;
+	cursor: pointer;
+	-webkit-user-select: none;  /* Chrome all / Safari all */
+	-moz-user-select: none;     /* Firefox all */
+	-ms-user-select: none;      /* IE 10+ */
+	user-select: none;
+	background-image: url(../img/icon-menu.png);
+	background-repeat: no-repeat;
+	background-position: right center;
+}
+
+#nav input[type=checkbox]:checked ~ nav {
+    height: auto;
+    left: 21px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+   /* position: absolute;*/
+    top: 70px;
+  /*  width: 90%;*/
+
+}
+
+
+#wrapitup {width:23000px;}
+		
+	article#content {margin-left:.7em;}
+		
+	#portfolio .wrapper {
+			float: left;
+			display:inline-block;
+			
+			}
+					
+	.content-container {overflow: scroll;}
+	
+
+.no-touch div.tapimage {color: #e5d7ac; padding: 10px auto; height: 2em;
+content:"Tap Images to See Color Version";}
+
+#faceIcon {
+  position: fixed;
+    left: .4em;
+    top: .9em;
+    width: 8.7em;
+    z-index: 250;
+}
+
+img.email3 {width: 21px;}
+
+.no-touch img.grayscale{
+	filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'old-timey\'><feColorMatrix type=\'matrix\' values=\'0.14 0.45 0.05 0 0 0.12 0.39 0.04 0 0 0.08 0.28 0.03 0 0 0 0 0 1 0\'/></filter></svg>#old-timey");
+    -webkit-filter: sepia(1);
+    -webkit-filter: sepia(100%);
+    -moz-filter: sepia(100%);
+    -ms-filter: sepia(100%);
+    -o-filter: sepia(100%);
+    filter: sepia(100%);
+	filter:gray;
+}
+
+img.grayscale{
+	filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'old-timey\'><feColorMatrix type=\'matrix\' values=\'0.14 0.45 0.05 0 0 0.12 0.39 0.04 0 0 0.08 0.28 0.03 0 0 0 0 0 1 0\'/></filter></svg>#old-timey");
+    -webkit-filter: sepia(1);
+    -webkit-filter: sepia(100%);
+    -moz-filter: sepia(100%);
+    -ms-filter: sepia(100%);
+    -o-filter: sepia(100%);
+    filter: sepia(100%);
+	filter:gray;
+}
+
+img.grayscale:hover{
+ filter: none;
+    -webkit-filter: sepia(0);
+    -moz-filter: sepia(0);
+    -ms-filter: sepia(0);
+    -o-filter: sepia(0);
+    filter: sepia(0);
+}
+
+.no-touch img.grayscale:hover{
+filter: grayscale(0%);
+-webkit-filter: sepia(0%);
+filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/></filter></svg>#grayscale");
+}
+
+img.grayscale, img.grayscale:hover {border: solid #000 2px; margin-bottom:-.2em ;}
+
+img.grayscale {max-height: 20em;}
+
+
+#faceIcon {
+    display:none}
+
+div#faceIconSm {
+    margin: 6px auto -25px;
+}
+
+/* ******************************************
+		Media Queries for nac 
+	****************************************** */
+
+	@media (min-width: 35em){
+		#container-header{ background-color: #7A847D;
+    margin-left: -6.875em;
+    width: 13.75em;
+}
+#container-header h2{
+    font-size: 1.4em;
+    padding-left: .15em;
+}
+	}
+	
+	@media(min-width: 24em) {
+		
+		#nav label {
+    background-position: right center;
+   
+}
+
+
+
+#faceIcon {
+    left: 1em;
+}
+
+img.email3 {}
+
+
+	}
+
+
+
+/* ******************************************
+		Media Queries for medium large
+	****************************************** */
+	
+	
+
+@media(min-width: 45em) {
+
+	
+	
+		
+	/*#portfolio.figure
+	 {float: left; display: inline-block;
+		}
+		*/
+		
+		
+		#masthead {
+			max-width:40em;
+		}
+		
+		#nav,
+		#masthead,
+		#content,
+		#colophon {
+		    margin: 0 5.5%;
+		    }
+			
+		/*container-header {
+			background: #352a38 url("../img/bg-photo-l.jpg") no-repeat top center;
+			padding:5% 0;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			background-size: cover;
+		}*/
+			
+			
+	    #nav label {
+	        display: none;
+	    }
+			
+		.name, .email {
+			    float: left;
+			    width: 50%;
+			    -webkit-box-sizing: border-box;
+			    -moz-box-sizing: border-box;
+			    box-sizing: border-box;
+			    }
+    
+		.name {
+			    padding-right: .65em;
+			    }
+    
+		.email {
+			    padding-left: .65em;
+			    }
+    
+		.send {
+			    width: 48.6%;
+			    }
+				    
+    
+    #nav {
+        padding: 0;
+	margin: auto;
+	position: fixed;
+	right: 1em;
+    }
+ #nav h3 {
+         margin: .39em 1.3em 0 0;
+    }
+	
+	  #nav label {
+        display: none;
+    }
+	
+	 #nav nav {
+        height: auto;
+        overflow: visible;
+    }
+	
+	 #nav ul {
+        border: 0;
+        margin: 0;
+		text-align: left;
+        }
+   #nav li {
+        display: inline;
+        border: 0;
+		
+    }
+	
+	 #nav li:after {
+		 content: "|";
+		 display:inline-block;
+		 color: #000;
+		 padding-left: .2em;}
+		 
+		  #nav li:last-child:after {color:#fff;}
+	
+#nav a {
+        display: inline-block;
+	background: none;
+	opacity: 1;
+	font-size: .7em;
+    	    padding-bottom: 0.375em;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 1.975em;        }
+ #nav a:hover {background:none;
+	
+	}
+	
+	#statement {margin: 1em auto;}
+	
+		.tapimage {display: none;}	
+	}
+	
+	/* ******************************************
+		Medium screen 
+****************************************** */
+	
+	@media screen and (min-height: 40em) {
+		img.grayscale {max-height: 29em;}
+		#portfolio p {font-size: 0.6em;}
+		}
+		
+		/* ******************************************
+		Medium Large screen 
+****************************************** */
+	
+	
+	@media screen and (min-height: 46em) {
+		img.grayscale {max-height: 35em;}
+		#portfolio p {font-size: .8em;}
+		
+	}
+	
+/* ******************************************
+		Large
+****************************************** */
+
+	
+		@media screen and (min-height: 55em) {
+	
+		img.grayscale {max-height: 46em;}
+
+		
+	}
+	/* ******************************************
+		X-Large
+****************************************** */
+	
+	@media (min-height: 75em) {
+		#wrapitup {width:1500.7em;}
+		#statement {margin: 1em auto;}
+		img.grayscale {max-height: 62.5em;}
+		
+
+    
+	}
+
+
+/* ******************************************
+	Print Styles
+****************************************** */
+@media print and (max-width: 8.5in){
+	
+	#masthead {
+		color:black;
+	}
+	
+	#container-header {
+		height: auto;
+	}
+	
+	img {
+		width:2in;
+	}
+	
+	#portfolio	{
+		float:left;
+		width:45%;
+	}
+	
+	#resume	{
+		float:right;
+		width:45%;
+	}
+	
+	#container-footer	{
+		clear:both;
+	}
+	
+}
+	
+/* ******************************************
+    IE 8 and below, legacy browser style fixes
+****************************************** */
+
+/* Figures/Images */
+
+.ie #portfolio figure {
+    height: 100%;
+    box-sizing: border-box;
+    }
+.ie .tapimage {display: none;}	
+/* "*" hack applies only to IE7 and below */
+
+.ie #portfolio figure {
+   /* *width: auto;*/
+    }
+	
+.ie	.no-touch img.grayscale{
+	filter: gray;
+	
+}
+
+.ie img.grayscale{
+
+	filter: gray;
+	
+	
+}
+   
+/* Navigation */
+
+/* IE8 .checked class for checkbox.js */
+
+#nav input[type=checkbox].checked ~ nav {
+    height: auto;
+    overflow: visible;  
+}
+
+/* Always show nav, IE7 and below */
+
+.ie #nav nav {
+    *height: auto;
+    *overflow: visible;  
+}
+
+/* Hide navicon, IE7 and below */
+
+.ie #nav label { 
+    *background: none;
+    }
+     
+/* box-sizing polyfill, IE7 and below (The URL in .ie textarea is placeholder only. You will need to replace with path to your domain) */
+
+.ie .wrapper,
+.ie .name,
+.ie .email,
+.ie input,
+.ie textarea {
+    *behavior: url("http://www.thinkvolution1.com/rickpas/js/boxsizing.htc");
+}
