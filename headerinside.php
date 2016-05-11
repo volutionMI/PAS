@@ -39,9 +39,8 @@
 			<a href="index.php">
 				<header id="masthead" class="wrapper">
 				<h2>Rick Pas</h2>
-
 				<h1>Contemporary Realism</h1>
-			</header>
+				</header>
 			</a>
 		</div>
 		

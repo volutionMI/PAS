@@ -342,7 +342,7 @@ input#toggle nav{
 	position: absolute;
 	top: 80px;}
 
-#masthead {
+/*#masthead {
 	background-color: #7A847D;
     height: 5em;
     left: 50%;
@@ -350,7 +350,7 @@ input#toggle nav{
     position: fixed;
     top: 0;
     z-index: 200;
-	}
+	}*/
 #container-header {width: 9em;}
 	#container-header a {text-decoration: none;}
 	
@@ -661,7 +661,7 @@ img.faceicon {
 
 #nav input[type=checkbox] {
     position: absolute;
-    top: -999em;face
+    top: -999em;
     left: -999em;
 }
 
@@ -707,7 +707,7 @@ img.faceicon {
 .no-touch div.tapimage {color: #e5d7ac; padding: 10px auto; height: 2em;
 content:"Tap Images to See Color Version";}
 
-#faceIcon {
+#icon {
   position: fixed;
     left: .4em;
     top: .9em;
@@ -991,16 +991,19 @@ img.email3 {}
 @media (max-width: 24em) {
 #container-header{ 
 	width: 7em; 
-	background-color: #7A847D;
+	background-color: #7A847D;  
     height: 4em;
+    position: fixed;
+    left: 30%;
+    z-index: 650;
 }
 
 #masthead {  
-    left: 45%;
+   /* left: 45%;
     margin-left: -1.75em;
     position: fixed;
     top: 0;
-    z-index: 600;
+    z-index: 600;*/
 }
 
 #container-header h2 {
