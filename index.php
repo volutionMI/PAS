@@ -1,8 +1,9 @@
 <?php require_once('header.php'); ?>
+   <div id="wrapitup">
 		<div id="container-content">
 			<article id="content">
 			
-				<section id="portfolio" class="group">
+			<section id="portfolio" class="group">
 
             
    				<article class="group wrapper">
@@ -324,6 +325,6 @@ acrylic on panel, 10&nbsp;x&nbsp;8.</p>
 		
 			</article>
 		</div>
-	</DIV>
-		
+	</div>
+</div>
 <?php require_once('footer.php'); ?>

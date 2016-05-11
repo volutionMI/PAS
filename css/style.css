@@ -342,17 +342,16 @@ input#toggle nav{
 	position: absolute;
 	top: 80px;}
 
-
-#container-header {
-	 background-color: #7A847D;
+#masthead {
+	background-color: #7A847D;
     height: 5em;
     left: 50%;
     margin-left: -1.75em;
     position: fixed;
     top: 0;
-    width: 9em;
     z-index: 200;
 	}
+#container-header {width: 9em;}
 	#container-header a {text-decoration: none;}
 	
 	
@@ -455,6 +454,13 @@ letter-spacing: .01em;
 #statement p.indent, #ctact p.indent {margin-top:0;
 margin-bottom: .8em;}
 
+img.faceicon {
+    padding-right: .4em;
+    margin: 0;
+    width: 14px;
+    height: 14px;
+    float: left;
+}
 
 /********************************************
 	Fluid Media
@@ -757,7 +763,7 @@ img.grayscale {max-height: 20em;}
 	****************************************** */
 
 	@media (min-width: 35em){
-		#container-header{ background-color: #7A847D;
+#container-header{ background-color: #7A847D;
     margin-left: -6.875em;
     width: 13.75em;
 }
@@ -767,13 +773,44 @@ img.grayscale {max-height: 20em;}
 }
 	}
 	
-	@media(min-width: 24em) {
-		
-		#nav label {
+@media(min-width: 24em) {
+	#nav label {
     background-position: right center;
-   
+   }
+
+#container-header {
+    background-color: #7A847D;
+    height: 4em;
+    left: 7em;
+    margin-left: -1.75em;
+    position: fixed;
+    top: 0;
+    width: 7em;
+    z-index: 200;
+}
+#container-header h2 {
+    color: #FFF;
+    font-size: .8em;
+    font-weight: 100;
+    letter-spacing: 0.45em;
+    text-transform: uppercase;
+        line-height: 1;
+    margin-top: 1.25em;
+    text-align: center;
+    padding-left: .08em;
 }
 
+
+#container-header h1 {
+    color: #111;
+    font-size: 0.6em;
+    font-weight: 100;
+    letter-spacing: 0.1em;
+    padding-left: 0;
+    text-align: center;
+    text-transform: uppercase;
+    width: 12.5 em;
+}
 
 
 #faceIcon {
@@ -794,8 +831,6 @@ img.email3 {}
 	
 
 @media(min-width: 45em) {
-
-	
 	
 		
 	/*#portfolio.figure
@@ -949,7 +984,61 @@ img.email3 {}
     
 	}
 
+/* ******************************************
+		smallest
+****************************************** */
+	
+@media (max-width: 24em) {
+#container-header{ 
+	width: 7em; 
+	background-color: #7A847D;
+    height: 4em;
+}
 
+#masthead {  
+    left: 45%;
+    margin-left: -1.75em;
+    position: fixed;
+    top: 0;
+    z-index: 600;
+}
+
+#container-header h2 {
+    color: #FFF;
+    font-size: .8em;
+    font-weight: 100;
+    letter-spacing: 0.45em;
+    text-transform: uppercase;
+    line-height: 1;
+    margin-top: 1.25em;
+    padding-left: .08em;
+}
+
+
+#container-header h1 {
+    color: #111;
+    font-size: 0.6em;
+    font-weight: 100;
+    letter-spacing: 0.1em;
+    padding-left: 0;
+    text-align: center;
+    text-transform: uppercase;
+    width: 12.5 em;
+}
+
+#statement p, #ctact p  {
+    font-size: .65em;
+    margin: 0;
+}
+
+#container-nav {
+    left:0;
+}
+
+#nav label { 
+    background-position: 90% center;
+}
+}
 /* ******************************************
 	Print Styles
 ****************************************** */
