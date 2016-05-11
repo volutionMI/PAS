@@ -55,7 +55,12 @@
 	<body lang="en"> 
 		
 		
-		
+		<div id="container-header"> <a href="index.php">
+				<header id="masthead" class="wrapper">
+				<h2>Rick Pas</h2>
+				<h1>Contemporary Realism</h1>
+				</header>
+			</a>
 		<div id="container-nav" class="homeimage">
 			<div id="icon">
         	<a href="https://www.facebook.com/pages/Rick-Pas-Studio/316205728224?ref=hl." target="_blank"><img class="faceicon" height="21" width="21" alt="facebook" src="img/facebook.png"></a>&emsp;
@@ -78,11 +83,6 @@
             </ul>
             
                              </nav>
-</section></div><div id="container-header"> 
-			<a href="index.php">
-				<header id="masthead" class="wrapper">
-				<h2>Rick Pas</h2>
-				<h1>Contemporary Realism</h1>
-				</header>
-			</a>
+</section></div>
+			
 		</div>

@@ -333,7 +333,7 @@ section footer {
 	background:#fff;
 	height: 2.7em;
 	z-index: 10;
-	position: fixed;
+	position: absolute;
     top: 0;
     width: 100%;
 }
@@ -346,10 +346,13 @@ input#toggle nav{
 	background-color: #7A847D;  
     height: 5em;
     z-index: 650; 
-    margin: -17px auto;
+    position:absolute;
+    left:40%;
+    padding-left: .5em;
+    padding-right:.4em;
 }
 	
-#container-header {width: 9em;}
+#container-header, #container-footer {width: 100vw; position:fixed; z-index:1000;}
 	#container-header a {text-decoration: none;}
 	
 	
@@ -372,7 +375,6 @@ input#toggle nav{
     padding-left: 0;
     text-align: center;
     text-transform: uppercase;
-    width: 12.5 em;
 }
 
 
@@ -389,7 +391,6 @@ input#toggle nav{
 	color:#eee;
 	font-weight:100;
 	position: fixed;
-	width: 100%;
 	text-align: center;
 	height: 75px;
 }
@@ -711,7 +712,6 @@ content:"Tap Images to See Color Version";}
     z-index: 250;
 }
 
-img.email3 {width: 21px;}
 
 .no-touch img.grayscale{
 	filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'old-timey\'><feColorMatrix type=\'matrix\' values=\'0.14 0.45 0.05 0 0 0.12 0.39 0.04 0 0 0.08 0.28 0.03 0 0 0 0 0 1 0\'/></filter></svg>#old-timey");
@@ -759,63 +759,16 @@ img.grayscale {max-height: 20em;}
 	****************************************** */
 
 	@media (min-width: 35em){
-#container-header{ background-color: #7A847D;
-    margin-left: -6.875em;
-    width: 13.75em;
-}
+
 #container-header h2{
     font-size: 1.4em;
     padding-left: .15em;
 }
-	}
+
 	
-@media(min-width: 24em) {
-	#nav label {
-    background-position: right center;
-   }
-
-#container-header {
-    background-color: #7A847D;
-    height: 4em;
-    left: 7em;
-    margin-left: -1.75em;
-    position: fixed;
-    top: 0;
-    width: 7em;
-    z-index: 200;
-}
-#container-header h2 {
-    color: #FFF;
-    font-size: .8em;
-    font-weight: 100;
-    letter-spacing: 0.45em;
-    text-transform: uppercase;
-        line-height: 1;
-    margin-top: 1.25em;
-    text-align: center;
-    padding-left: .08em;
-}
-
-
-#container-header h1 {
-    color: #111;
-    font-size: 0.6em;
-    font-weight: 100;
-    letter-spacing: 0.1em;
-    padding-left: 0;
-    text-align: center;
-    text-transform: uppercase;
-    width: 12.5 em;
-}
-
-
-#faceIcon {
-    left: 1em;
-}
-
-img.email3 {}
-
-
+ #masthead {
+    width: 13em;}
+    
 	}
 
 
@@ -829,30 +782,16 @@ img.email3 {}
 @media(min-width: 45em) {
 	
 		
-	/*#portfolio.figure
-	 {float: left; display: inline-block;
-		}
-		*/
-		
-		
-		#masthead {
-			max-width:40em;
-		}
+
 		
 		#nav,
-		#masthead,
+		
 		#content,
 		#colophon {
 		    margin: 0 5.5%;
 		    }
 			
-		/*container-header {
-			background: #352a38 url("../img/bg-photo-l.jpg") no-repeat top center;
-			padding:5% 0;
-			-webkit-background-size: cover;
-			-moz-background-size: cover;
-			background-size: cover;
-		}*/
+		
 			
 			
 	    #nav label {
@@ -883,8 +822,9 @@ img.email3 {}
     #nav {
         padding: 0;
 	margin: auto;
-	position: fixed;
-	right: 1em;
+	/*position: fixed;
+	right: 1em;*/
+	float:right;
     }
  #nav h3 {
          margin: .39em 1.3em 0 0;
@@ -935,7 +875,9 @@ img.email3 {}
 	
 		.tapimage {display: none;}	
 	}
-	
+
+
+}
 	/* ******************************************
 		Medium screen 
 ****************************************** */
@@ -976,31 +918,17 @@ img.email3 {}
 		#statement {margin: 1em auto;}
 		img.grayscale {max-height: 62.5em;}
 		
+}
 
-    
-	}
+
 /* ******************************************
 		smallest
 ****************************************** */
 	
 @media (max-width: 375px) {
-#container-header {
-    width: 18.2em;
-}
-}
-/* ******************************************
-		smallest
-****************************************** */
-	
-@media (max-width: 17em) {
-#container-header{ 
-    position: fixed;
-    width: 17em;
-    top: 0;
-    z-index: 650;
-}
 
-#masthead { width: 7em; 
+
+#masthead {
 	width:7em;
     margin: -17px auto;
 }
@@ -1008,26 +936,18 @@ img.email3 {}
 
 
 #container-header h2 {
-    color: #FFF;
     font-size: .8em;
-    font-weight: 100;
     letter-spacing: 0.45em;
-    text-transform: uppercase;
-    line-height: 1;
-    padding-left: .5em;
     padding-top: 1em;
 }
 
 
 #container-header h1 {
-    color: #111;
     font-size: 0.6em;
-    font-weight: 100;
     letter-spacing: 0.1em;
     padding-left: 0;
-    text-align: center;
     text-transform: uppercase;
-    width: 12.5 em;
+  
 }
 
 #statement p, #ctact p  {
@@ -1035,27 +955,20 @@ img.email3 {}
     margin: 0;
 }
 
-#container-nav.homeimage{
-	width:24em;
-}
+
 
 #container-nav {
     left:0;
 }
 
-#nav label { 
-    background-position: 60% center;
-}
+
 
 #wrapitup {
     max-height: 477px;
     overflow: scroll;
     z-index: 0;
 }
-#container-footer {
- width: 17em;
-    
-}
+
 }
 /* ******************************************
 	Print Styles
@@ -1090,6 +1003,19 @@ img.email3 {}
 	
 }
 	
+
+	@media (min-width:425px){
+	#icon {
+    width: 12em;}
+	img.faceicon {
+    padding-right: 1em;
+    margin: 0;
+    width:21px;
+    height: 21px;
+    float: left;
+}
+
+}
 /* ******************************************
     IE 8 and below, legacy browser style fixes
 ****************************************** */
